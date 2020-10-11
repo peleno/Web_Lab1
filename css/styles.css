@@ -1,0 +1,13 @@
+@import "./normalize.min.css";
+
+@import "./global.css";
+
+@import "./header.css";
+
+@import "./reminders-section.css";
+@import "./sync-section.css";
+@import "./connections-section.css";
+
+@import "./bottom-baner.css";
+
+@import "./footer.css";

@@ -1,0 +1,56 @@
+.reminders {
+    display: flex;
+    margin-top: 100px;
+}
+
+.reminders__people-container {
+    padding-right: 42px;
+    padding-left: 42px;
+}
+
+.reminders__people-container__item {
+    width: 342.79px;
+    height: 66.53px;
+    display: flex;
+    align-items: center;
+    border-radius: 17px;
+    padding-left: 17px;
+    padding-right: 17px;
+    
+}
+
+.reminders__people-container__item__text {
+    font-size: 11px;
+    color: rgba(34, 34, 34, 0.8);
+    margin-left: 8px;
+}
+
+.bold {
+    color: #222;
+    font-weight: 600;
+}
+
+.follow-up {
+    font-weight: 600;
+    color: #26C296;
+}
+
+.reminders__inner {
+    max-width: 344px;
+}
+
+.reminders__inner__heading {
+    margin-top: 0;
+}
+
+.reminders__inner__list {
+    margin-left: 12px;
+    width: 210px;
+    height: 40px;
+    display: grid;
+    grid-template-columns: 122px 105px;
+    grid-template-rows: 33px 17px;
+    list-style-image: url('../images/green-checkmark.svg');
+    font-size: 11px;
+
+}
