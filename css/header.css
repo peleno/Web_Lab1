@@ -5,15 +5,14 @@
 
 .header__title {
     font-weight: bold;
-    font-size: 24.1183px;
+    font-size: 1.5074rem;
     color: #222;
     margin-right: 43px;
 }
 
 .header__login {
-    height: 13.17px;
-    font-size: 11px;
-    margin-right: 210px;
+    font-size: 0.6875rem;
+    margin-right: auto;
 }
 
 .header__nav ul {
@@ -26,7 +25,7 @@
 
 .header__nav-item {
     margin-right: 38px;
-    font-size: 11px;
+    font-size: 0.6875rem;
 }
 
 .header__trial {
@@ -36,57 +35,79 @@
     border-radius: 33.9597px;
     background-color: #fff;
     color: #1943ef;
-    font-size: 11px;
+    font-size: 0.6875rem;
     font-weight: 550;
+
+    background: linear-gradient(to left, #fff 50%, #1943ef 50%) right;
+    background-size: 200%;
+    transition: 0.7s linear;
 }
 
-.hero__container {
-    display: flex;
-    margin-top: 66px;
-}
-
-.hero__inner {
-    max-width: 424px;
-    padding: 76px 123px 0 0;
-}
-
-.hero__heading {
-    color: #222;
-    font-size: 40px;
-}
-.hero__form {
-    display: flex;
-    justify-content: space-between;
-    width: 424px;
-    height: 42px;
-    border: none;
-    border-radius: 34px;
-}
-
-.hero__input {
-    width: 268px;
-    border: none;
-    margin-left: 16px;
-    border-radius: 34px;
-}
-
-.hero__submit {
-    width: 156px;
-    border: none;
-    border-radius: 34px;
+.header__trial:hover {
     color: #fff;
-    background: #1943ef;
+    background-position: left;
 }
 
-.hero__list {
-    width: 338px;
-    height: 17px;
-    display: flex;
-    list-style-image: url('../images/grey-checkmark.svg');
-    padding-left: 20px;
+.header__menu {
+    display: none;
+    width: 32px;
+    cursor: pointer;
 }
 
-.hero__list-item {
-    margin-right: 25px;
-    font-size: 11px;
+.header__menu > img {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .header__container {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        padding: 10px;
+        background-color: white;
+    }
+
+    .header__menu {
+        display: block;
+    }
+
+    .header__trial {
+        display: none;
+    }
+
+    .header__nav {
+        background: #fff;
+        position: fixed;
+        top: 55.2px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin-top: 0;
+        clip-path: circle(0 at top right);
+        transition: clip-path 0.9s ease-in;
+    }
+
+    .header__nav.open {
+        clip-path: circle(1000px at top);
+    }
+
+    .header__nav ul {
+        margin-right: 0;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+
+    .header__nav .header__nav-item {
+        margin-right: 0;
+        padding-top: 10vh;
+        flex: 1;
+    }
+
+    .header__nav a {
+        font-weight: 500;
+        display: block;
+        font-size: 32px;
+    }
 }

@@ -1,8 +1,10 @@
 @import "./normalize.min.css";
 
+@import "./animation.css";
 @import "./global.css";
 
 @import "./header.css";
+@import "./hero.css";
 
 @import "./reminders-section.css";
 @import "./sync-section.css";

@@ -1,0 +1,84 @@
+.hero__container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4.125rem;
+}
+
+.hero__inner {
+    max-width: 26.5rem;
+    padding-top: 4.75rem;
+}
+
+.hero__heading {
+    color: #222;
+    font-size: 2.5rem;
+}
+.hero__form {
+    display: flex;
+    /* max-width: 424px; */
+    box-shadow: 0rem 0.8663rem 3.4653rem #f2f5fa;
+    border: none;
+    border-radius: 2.125rem;
+}
+
+.hero__input {
+    width: 16.75rem;
+    height: 2.625rem;
+    border: none;
+    padding-left: 1.25rem;
+    margin-left: 1rem;
+    border-radius: 2.125rem;
+}
+
+.hero__submit {
+    width: 9.75rem;
+    height: 2.625rem;
+    border: none;
+    border-radius: 2.125rem;
+    color: #fff;
+    background: #1943ef;
+}
+
+.hero__list {
+    width: 21.125rem;
+    height: 1.0625rem;
+    display: flex;
+    list-style-image: url("../images/grey-checkmark.svg");
+    padding-left: 1.25rem;
+}
+
+.hero__list-item {
+    margin-right: 1.5625rem;
+    font-size: 0.6875rem;
+}
+
+@media screen and (max-width: 768px) {
+    .hero__container {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hero__inner {
+        padding: 0;
+    }
+
+    .hero__form {
+        flex-direction: column;
+        align-items: center;
+        box-shadow: none;
+    }
+
+    .hero__input {
+        box-shadow: 0rem 0.8663rem 3.4653rem #f2f5fa;
+    }
+
+    .hero__submit {
+        margin-top: 0.4375rem;
+        margin-bottom: 0.4375rem;
+    }
+
+    .hero__list {
+        margin: 0 auto;
+    }
+}

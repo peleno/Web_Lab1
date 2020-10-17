@@ -1,86 +1,101 @@
 .sync {
     display: flex;
-    margin-top: 90px;
-    padding-left: 90px;
+    justify-content: space-between;
+    margin-top: 5.625rem;
 }
 
 .sync__inner {
-    width: 370px;
-    padding-right: 53px;
+    width: 23.125rem;
 }
 
 .sync__inner__refresh-icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 51.98px;
-    height: 51.98px;
-    background: #E4F7F2;
-    border-radius: 31.8806px;
+    width: 3.2487rem;
+    height: 3.2487rem;
+    background: #e4f7f2;
+    border-radius: 1.9925rem;
+}
+
+.sync__inner__refresh-icon > img {
+    animation: spin 4s linear infinite;
 }
 
 .sync__inner__list {
-    margin-left: 12px;
-    width: 320px;
-    height: 20px;
+    padding-left: 0.9375rem;
+    width: 20rem;
+    height: 1.25rem;
     display: grid;
-    grid-template-columns: 143px 164px;
-    grid-template-rows: 33px 17px;
+    grid-template-columns: 8.9375rem 10.25rem;
+    grid-template-rows: 2.0625rem 1.0625rem;
     list-style: none;
-    list-style-image: url('../images/green-checkmark.svg');
-    font-size: 11px;
+    list-style-image: url("../images/green-checkmark.svg");
+    font-size: 0.6875rem;
 }
 
 .sync__profile {
-    width: 352.07px;
-    height: 209.3px;
-    margin-top: 80px;
-    border-radius: 20.7917px;
+    width: 22.0044rem;
+    height: 13.08125rem;
+    margin-top: 5rem;
+    border-radius: 1.29948125rem;
 }
 .sync__profile__heading {
     display: flex;
     align-items: center;
-    margin-top: 17px;
-    margin-left: 17px;
+    margin-top: 1.0625rem;
+    margin-left: 1.0625rem;
 }
 
 .sync__profile__heading__name {
     margin: 0;
     color: #222;
-    font-size: 17px;
-    margin-left: 8px;
+    font-size: 1.0625rem;
+    margin-left: 0.5rem;
     font-weight: 600;
 }
 
 .sync__profile__heading__position {
     margin: 0;
     color: #222;
-    font-size: 11px;
-    margin-left: 8px;
+    font-size: 0.6875rem;
+    margin-left: 0.5rem;
     font-weight: 500;
 }
 
 .sync__profile__more {
-    margin-top: 17px;
+    margin-top: 1.0625rem;
     margin-bottom: 0;
-    margin-left: 17px;
+    margin-left: 1.0625rem;
 }
 
 .sync__profile__items {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 90px;
-    margin-left: 17px;
-    margin-top: 14px;
+    height: 5.625rem;
+    margin-left: 1.0625rem;
+    margin-top: 0.875rem;
 }
 
 .sync__profile__item {
     display: flex;
     align-items: center;
-    font-size: 11px;
+    font-size: 0.6875rem;
 }
 
 .sync__profile__item__icon {
-    padding-right: 9px;
+    padding-right: 0.5625rem;
+}
+
+@media screen and (max-width: 768px) {
+    .sync {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sync__inner__list {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

@@ -1,28 +1,23 @@
 .reminders {
     display: flex;
-    margin-top: 100px;
-}
-
-.reminders__people-container {
-    padding-right: 42px;
-    padding-left: 42px;
+    justify-content: space-between;
+    margin-top: 6.25rem;
 }
 
 .reminders__people-container__item {
-    width: 342.79px;
-    height: 66.53px;
+    max-width: 21.4244rem;
+    height: 4.1581rem;
     display: flex;
     align-items: center;
-    border-radius: 17px;
-    padding-left: 17px;
-    padding-right: 17px;
-    
+    border-radius: 1.0625rem;
+    padding-left: 1.0625rem;
+    padding-right: 1.0625rem;
 }
 
 .reminders__people-container__item__text {
-    font-size: 11px;
+    font-size: 0.6875rem;
     color: rgba(34, 34, 34, 0.8);
-    margin-left: 8px;
+    margin-left: 0.5rem;
 }
 
 .bold {
@@ -32,11 +27,11 @@
 
 .follow-up {
     font-weight: 600;
-    color: #26C296;
+    color: #26c296;
 }
 
 .reminders__inner {
-    max-width: 344px;
+    max-width: 21.5rem;
 }
 
 .reminders__inner__heading {
@@ -44,13 +39,24 @@
 }
 
 .reminders__inner__list {
-    margin-left: 12px;
-    width: 210px;
-    height: 40px;
+    padding-left: 0.9375rem;
+    width: 13.125rem;
+    height: 3.125rem;
     display: grid;
-    grid-template-columns: 122px 105px;
-    grid-template-rows: 33px 17px;
-    list-style-image: url('../images/green-checkmark.svg');
-    font-size: 11px;
+    grid-template-columns: 7.625rem 6.5625rem;
+    grid-template-rows: 2.0625rem 1.0625rem;
+    list-style-image: url("../images/green-checkmark.svg");
+    font-size: 0.6875rem;
+}
 
+@media screen and (max-width: 768px) {
+    .reminders {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .reminders__inner__list {
+        margin: 0 auto;
+    }
 }
